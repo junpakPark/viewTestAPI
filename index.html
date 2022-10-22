@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Argus 1.2 - Report</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card-group">
+      <div class="card">
+        <div class="card-header">
+          Since inception
+        </div>
+        <div class="card-body">
+          <h5 class="card-title inception"></h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Cum. Return
+        </div>
+        <div class="card-body">
+          <h5 class="card-title return"></h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Total Balance
+        </div>
+        <div class="card-body">
+          <h5 class="card-title balance"></h5>
+        </div>
+      </div>
+    </div>
+    <br>
+    <section id="date">
+      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+        <button class="btn btn-outline-primary active">All</button>
+        <button class="btn btn-outline-primary">1W</button>
+        <button class="btn btn-outline-primary">1M</button>
+        <button class="btn btn-outline-primary">6M</button>
+        <button class="btn btn-outline-primary">1Y</button>
+      </div>
+      <div id="pickergroup">
+        <input id="startDate" type="date" class="btn btn-outline-primary btn-sm" style="margin: 0 8px; border-radius: 4px;" min="2022-03-20">
+        -
+        <input id="endDate" type="date" class="btn btn-outline-primary btn-sm" style="margin: 0 8px; border-radius: 4px;" min="2022-03-20">
+        <button class="btn btn-primary btn-sm" onclick="datePicker()">submit</button>
+      </div>
+    </section>
+    <br>
+    <div id="table" class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th width="28%" onclick="sortDate(0)" scope="col">Date</th>
+            <th width="18%" onclick="sortTable(1)" scope="col">Daily PNL</th>
+            <th width="18%" onclick="sortTable(2)" scope="col">Cum. PNL</th>
+            <th width="18%" onclick="sortTable(3)" scope="col">Daily Return</th>
+            <th width="18%" onclick="sortTable(4)" scope="col">Cum. Return</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="js/background.js"></script>
+  <script src="js/table.js"></script>
+  <script src="js/card.js"></script>
+</body>
+</html>
