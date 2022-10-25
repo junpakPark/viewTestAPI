@@ -6,7 +6,7 @@
 <br>
 ## 아쉬운 점
 <br>코드에 대한 이해없이 구글링을 통해 찾은 코드를 그대로 붙여넣고,
-<br>Interactive developer님의 HTML5 Canvas Tutorial을 그대로 따라 타이핑하고
+<br>Interactive developer님의 HTML5 Canvas Tutorial을 그대로 따라 타이핑한 후
 <br>원의 크기나 색상만 바꾸어서 적용하였습니다. 
 <br>
 <br>
