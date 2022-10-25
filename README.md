@@ -12,5 +12,5 @@
 <br>
 <br>
 * 참고자료
-  * [HTML5 Canvas Tutorial] (https://youtu.be/D6EiRSRhsbQ)
-  * [How TO - Sort a Table] (https://www.w3schools.com/howto/howto_js_sort_table.asp)
+  * [HTML5 Canvas Tutorial](https://youtu.be/D6EiRSRhsbQ)
+  * [How TO - Sort a Table](https://www.w3schools.com/howto/howto_js_sort_table.asp)
